@@ -1,0 +1,86 @@
+.texte-principal {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 15px;
+padding-top: 80px;
+}
+
+.texte-principal h1,
+.texte-principal h2 {
+ margin: 0px;
+}
+
+.texte-principal h1 {
+font-size: 30px;
+font-family:"Poppins","sans serif";
+font-weight: 550;
+color: #0d1261;
+}
+
+.texte-principal h2 {
+font-size: 15px;
+font-family:Arial, Helvetica, sans-serif;
+color:#497ff0;
+}
+
+/* Création de la grille*/
+.tableau {
+display: grid;
+grid-template-columns: repeat(4,1fr); 
+gap: 20px;
+width: 90px; 
+margin: 0 ;
+padding-top: 50px; /*pour descendre les carrés*/
+}
+
+
+/*Pour chaque carré*/
+
+.carre {
+display: flex;
+flex-direction: column;
+width: 240px;
+aspect-ratio: 1/1;
+}
+
+/*Image dans le carré*/
+
+.carre img {
+width: 100%;
+height: auto;
+object-fit: cover;
+}
+
+/*Sous titre identique*/
+
+.carre h2 {
+margin: 5px 0;
+font-size: 12px;
+text-align: start;
+color:rgba(156, 156, 156, 1);
+font-family: "Inter", sans-serif;
+font-weight: 400; /* Pour faire l'effet fin*/
+}
+
+.carre h1{
+margin: 5px 0;
+font-size: 18px;
+text-align: start;
+font-family: "Inter",sans-serif;
+font-weight: 550;
+color: #0d1261;
+
+}
+
+.carre h2,.carre h1 {
+padding: 0px 15px;  /*Petit espace sur le coté*/
+background-color:#FFFFFF;
+}
+
+.contenu-texte {
+    display: flex;
+    flex-direction: column; /* en colonne*/
+}
+
+

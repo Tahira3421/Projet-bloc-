@@ -1,0 +1,147 @@
+
+/* --- GLOBAL --- */
+html, body {
+    background-color: #0865FF;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* --- LAYOUT PRINCIPAL --- */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* --- PARTIE GAUCHE (texte) --- */
+.Partie_gauche {
+    flex: 1;
+    color: white;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Partie_gauche h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.Partie_gauche h2 {
+    font-size: 15px;
+    margin-bottom: 20px;
+    white-space: nowrap;
+
+}
+
+.Partie_gauche p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.chiffres {
+    display: flex;
+    gap: 40px; /* espace entre les deux blocs */
+    margin-top: 20px;
+}
+
+.ligne {
+    display: grid; /* empile le nombre et le texte */
+    text-align: left; /* ou center si tu veux centrer */
+}
+
+.ligne-number {
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+}
+
+.ligne-label {
+    font-size: 16px;
+    color: white;
+    opacity: 0.9;
+}
+
+/* --- PARTIE DROITE (formulaire) --- */
+.Partie_droite {
+    flex: 1.3 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    padding-right: 80px; /* ajoute juste ça */
+}
+
+/* Conteneur du formulaire */
+.formulaire_contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Bloc blanc du formulaire */
+.contact_box {
+    width: 100%;
+    max-width: 300px;
+    padding: 40px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre + sous-titre */
+.contact_box h2 {
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.sous_titre_formulaire {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Formulaire */
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.form_group input {
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    background: #F0F4FF;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form_group input::placeholder {
+    color: #0D1168;
+    font-family: 'Fredoka', sans-serif;
+}
+
+/* Bouton */
+.contact_btn {
+    background-color: #0C63FE;
+    color: white;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    width: fit-content;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.contact_btn:hover {
+    background-color: #0056b3;
+}

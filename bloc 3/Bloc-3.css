@@ -1,0 +1,93 @@
+html, body {
+  height: 100%; /* nécessaire pour centrer verticalement la page entière */
+  margin: 0;
+}
+
+.texte-principal {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 15px;
+}
+
+.texte-principal h1,
+.texte-principal h2 {
+margin: 0px;
+}
+
+
+
+.texte-principal h1 {
+font-size: 30px;
+font-family:Arial, Helvetica, sans-serif;
+color: #0d1261;
+}
+
+.texte-principal h2 {
+font-size: 15px;
+font-family:Arial, Helvetica, sans-serif;
+color:#497ff0;
+}
+
+
+
+.services-layout { 
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+
+/* ----- Grille des cartes ----- */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  min-width: 480px;}
+
+
+  .service-card {
+  width: 150px;       /* plus étroit */
+  padding: 20px 15px; /* moins de marge interne */
+
+  padding: 40px 20px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  
+}
+
+
+
+.service-card img {
+  width: 60px;
+}
+
+.service-card h3 {
+  margin-top: 20px;
+  color: #262452;
+  font-size: 20px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+.service-card p {
+  margin-top: 10px;
+  color: #8E8CA0;
+  font-size: 14px;
+}
+
+/* ----- Couleurs pastel ----- */
+.card-yellow { background: #FFFCF5; }
+.card-orange   { background: #FFF8F5; }
+.card-pink   { background: #FEF7FC; }
+.card-purple { background: #FCF4FF; }
+
+
+.image-droite {
+  width: 350px;  
+  height: auto;
+}

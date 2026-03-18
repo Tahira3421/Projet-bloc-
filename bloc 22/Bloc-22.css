@@ -1,0 +1,153 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0B1263;
+    font-family: Arial, sans-serif;
+    color: white;
+     background-image: url("../images/bg-1.png");
+     background-repeat: no-repeat;
+    background-size: contain; /* ou 'contain' selon la maquette */
+    background-position: center;
+}
+
+
+.hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    padding: 80px;
+    align-items: center;
+    position: relative;
+}
+
+
+/* COLONNE GAUCHE       */
+
+.hero-left {
+    position: relative;
+    width: 400px;     /* largeur de la colonne */
+    height: 500px;    /* hauteur de la colonne */
+    margin: 0 auto;   /* centre horizontalement */
+}
+
+/* IMAGE PRINCIPALE - centrée */
+.hero-img {
+    width: 300px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;         
+    left: 50%;        
+    transform: translate(-50%, -50%); /* centre exact */
+    z-index: 5;
+}
+
+/* FORMES DÉCORATIVES */
+.shape {
+    position: absolute;
+    pointer-events: none;
+}
+
+
+/* Forme bleue - légèrement en haut à gauche de l'image */
+.shape-blue {
+    width: 200px;
+    top: 50px;        /* distance du haut de la colonne */
+    left:   N70px;      /* distance du bord gauche */
+    z-index: 2;
+}
+
+/* Forme verte - légèrement derrière et à droite de l'image */
+.shape-green {
+    width: 250px;
+    top: 220px;       /* distance du haut de la colonne */
+    left: 130px;      /* distance du bord gauche */
+    z-index: 1;
+}
+
+/* Forme à points - bas à gauche */
+.shape-dots {
+    width: 140px;
+    bottom: 20px;
+    left: 30px;
+    z-index: 3;
+}
+
+
+
+
+
+/* COLONNE DROITE       */
+
+.hero-right {
+    padding-left: 60px;
+}
+
+.hero-right h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 0;
+    font-family:"Poppins","sans-serif";
+}
+
+.hero-right h2 {
+    font-size: 10px;
+    margin-top: 10px;
+    color: #00d895;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+.description {
+    margin-top: 20px;
+    color: #DCE2F1;
+    line-height: 1.7; /*espacement texte*/
+    font-size: 10px;
+    font-family:"Poppins", sans-serif;
+    opacity: 0.5;
+}
+
+/* Bloc icône + texte */
+.icon-text {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
+.icon-text p {
+    color: #d0d2f2;
+    line-height: 1.6;
+    font-family: "Poppins" sans-serif;
+    font-size: 10px;
+    opacity: 0.5;
+}
+
+
+/* Bouton */
+
+.btn {
+    margin-top: 40px;
+    padding: 15px 35px;
+    background: transparent;
+    border: 1px solid white;
+    color: #ffffff;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+
+.btn:hover {
+    background: white;
+    color: #0B1263;
+    
+}
